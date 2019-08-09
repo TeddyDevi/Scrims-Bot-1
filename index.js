@@ -70,11 +70,13 @@ let args = message.content.split(" ").slice(1);
     await message.delete(1)
     if (message.member.hasPermission("MANAGE_MESSSAGES")){}
 	  	const embed = new Discord.RichEmbed()
-      const textN = args[0];
-	  	.setColor("#ffb800")
+      const textN = args[0]
+      .setColor("#ffb800")
       .setTitle("MPL | Scrims !")
-      .addField("**Message By HOST**",textN, true);
-		message.channel.send({embed})
+      .addField(
+        "**Message By HOST**",
+       textN)
+	  	message.channel.send({embed})
   }
 })
 
