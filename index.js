@@ -1,4 +1,4 @@
-const token = "NjAxNzk0Nzc2NjUxNjYxMzI3.XTHiGw.e9gNIjsQMHU8HRXqrdqBbUri2u0"
+const token = "NjAxNzk0Nzc2NjUxNjYxMzI3.XU1ZxA.H6hTyDiHZUuYYc017X8FmjzPO6k"
 const Discord = require('discord.js');
 const Client = new Discord.Client();
 const OwnerID = "130515926117253122";
