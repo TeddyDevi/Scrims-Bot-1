@@ -55,13 +55,27 @@ let args = message.content.split(" ").slice(1);
    
 	if (command === "started") {
     await message.delete(1)
-    if (message.member.hasPermission("ADMINISTRATOR")){}
+    if (message.member.hasPermission("MANAGE_MESSSAGES")){}
 	  	const embed = new Discord.RichEmbed()
 	  	.setColor("#fa0505")
       .setTitle("MPL | Scrims !")
       .addField(
         "**NOTE:**",
        "Game has been Started")
+	  	message.channel.send({embed})
+  }
+
+  //(/Note command)
+  if (command === "note") {
+    await message.delete(1)
+    if (message.member.hasPermission("MANAGE_MESSSAGES")){}
+	  	const embed = new Discord.RichEmbed()
+      const textN = args[0];
+	  	.setColor("#ffb800")
+      .setTitle("MPL | Scrims !")
+      .addField(
+        "**Message By HOST**",
+       textN)
 	  	message.channel.send({embed})
   }
 })
