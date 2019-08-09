@@ -73,10 +73,8 @@ let args = message.content.split(" ").slice(1);
       const textN = args[0];
 	  	.setColor("#ffb800")
       .setTitle("MPL | Scrims !")
-      .addField(
-        "**Message By HOST**",
-       textN)
-	  	message.channel.send({embed})
+      .addField("**Message By HOST**",textN, true);
+		message.channel.send({embed})
   }
 })
 
