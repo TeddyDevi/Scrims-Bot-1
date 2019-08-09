@@ -1,4 +1,4 @@
-const token = "NjAxNzk0Nzc2NjUxNjYxMzI3.XU1bJg.XyceNtTwZl24FUbb5qKDKkSefWU"
+const token = process.env.token
 const Discord = require('discord.js');
 const Client = new Discord.Client();
 const OwnerID = "130515926117253122";
